@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+const navbarStyle = {
+  color:"red"
+}
+const mainStyle = {
+  backgroundColor:"red"
+}
+const buttonStyle = {
+  color: "red",
+  backgroundColor: "black"
+}
+const footerStyle = {
+  color: "purple",
+}
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p style={navbarStyle}>Navbar</p>
+      <p style={mainStyle}>Main</p>
+      <button style={buttonStyle}>Clickme</button>
+      <p style={footerStyle}>footer</p>
     </div>
   );
 }
-
-export default App;
